@@ -1,0 +1,14 @@
+﻿.title {
+  text-align: center;
+  font-size: 30px;
+  margin: 50px 0 0 0;
+  text-transform: uppercase;
+  color: #616874;
+}
+.title > span {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  display: block;
+  color: black;
+}

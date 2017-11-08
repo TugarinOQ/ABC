@@ -1,0 +1,32 @@
+.popup__alert {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  z-index: 10;
+}
+
+.alert {
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 20%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.alert > .close {
+  font-size: 30px;
+  float: right;
+  line-height: 19px;
+  cursor: pointer;
+}
