@@ -1,10 +1,10 @@
 {
-  "name": "portal",
-  "version": "0.0.0",
+  "name": "ABC",
+  "version": "2.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 192.168.100.2 --port 4200",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

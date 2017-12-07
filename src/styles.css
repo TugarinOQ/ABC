@@ -67,8 +67,8 @@ body {
 	font-size: 15px;
 	color: #1a1a1a;
 	background: #f6f6f6;
-  background: url('./assets/img/background.jpg') no-repeat;
-  background-size: 100%;
+  background: url('./assets/img/background.jpg') no-repeat top center;
+  background-size: 1000%;
   min-height: 100%;
 }
 
@@ -76,12 +76,13 @@ footer {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 10px;
+  bottom: 20px;
   height: 70px;
 }
 
 footer > .copyright {
-  width: 1200px;
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -108,12 +109,6 @@ footer > .copyright .ggkttd {
   background: url('./assets/img/icons/ggkttd.png') no-repeat center center;
   width: 100px;
   height: 70px;
-}
-footer > .copyright .brsm {
-  background: url('./assets/img/icons/brsm.png') no-repeat center center;
-  width: 100px;
-  height: 70px;
-  opacity: 0.8;
 }
 
 h1 {
