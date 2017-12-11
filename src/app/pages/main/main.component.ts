@@ -2,7 +2,7 @@
 import { Router } from '@angular/router';
 
 @Component({
-    selector: 'main',
+    selector: 'app-main',
     templateUrl: './main.component.html',
     styleUrls: ['./main.component.css']
 })
@@ -10,11 +10,11 @@ export class MainComponent {
 
   constructor(private router: Router) {
 
-    if (!localStorage.getItem('key')) {
-
-      this.router.navigateByUrl('/access');
-      return;
-    }
+    // if (!localStorage.getItem('key')) {
+    //
+    //   this.router.navigateByUrl('/access');
+    //   return;
+    // }
   }
 
 }

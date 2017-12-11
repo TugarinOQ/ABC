@@ -1,14 +1,46 @@
-﻿.title {
-  text-align: center;
-  font-size: 30px;
-  margin: 50px 0 0 0;
-  text-transform: uppercase;
-  color: #616874;
+﻿.logo {
+  background: url("../../../assets/img/logo.png") no-repeat center center;
+  position: absolute;
+  background-size: 100%;
+  top: 10px;
+  height: 45%;
+  left: 10px;
+  right: 10px;
+  max-width: 600px;
+  margin: 0 auto;
 }
-.title > span {
-  font-size: 40px;
-  font-weight: 500;
-  margin: 0 0 10px 0;
-  display: block;
-  color: black;
+
+.navigation {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  height: 40%;
+  overflow-y: hidden;
+}
+
+.navigation > .row {
+  width: calc(220px * 1);
+  margin: 0 auto;
+}
+
+.navigation > .row > .bigNavButton {
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  box-shadow: 0 15px 50px 0 #00000040;
+  background: #fcfcfc;
+  float: left;
+  margin: 50px 10px;
+  transition: all .3s;
+}
+
+.navigation > .row > .bigNavButton:hover, .navigation > .row > .bigNavButton:active {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px 0 #00000040;
+}
+
+.navigation > .row > .bigNavButton.puzzle {
+  background: #fcfcfc url('../../../assets/img/icons/puzzle.png') no-repeat center center;
+  background-size: 50%;
 }

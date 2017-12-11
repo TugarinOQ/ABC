@@ -66,10 +66,15 @@ body {
 	font-weight: 300;
 	font-size: 15px;
 	color: #1a1a1a;
-	background: #f6f6f6;
-  background: url('./assets/img/background.jpg') no-repeat top center;
-  background-size: 1000%;
+	background: #c0f1ff url('https://gallery.yopriceville.com/downloadfullsize/send/7593') no-repeat center bottom;
+  background-size: 100%;
   min-height: 100%;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
 }
 
 footer {
