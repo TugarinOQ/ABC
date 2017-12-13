@@ -1,6 +1,0 @@
-<section class="popup__alert" *ngFor="let alert of alerts">
-  <div class="{{ cssClass(alert) }} alert-dismissable">
-    {{alert.message}}
-    <a class="close" (click)="removeAlert(alert)">&times;</a>
-  </div>
-</section>

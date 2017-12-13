@@ -1,28 +1,42 @@
-// Protractor configuration file, see link for more information
-// https://github.com/angular/protractor/blob/master/lib/config.ts
+const config = {
+  baseUrl: 'http://localhost:5555/',
 
-const { SpecReporter } = require('jasmine-spec-reporter');
-
-exports.config = {
-  allScriptsTimeout: 11000,
   specs: [
-    './e2e/**/*.e2e-spec.ts'
+    './dist/e2e/**/*.e2e-spec.js'
   ],
-  capabilities: {
-    'browserName': 'chrome'
-  },
-  directConnect: true,
-  baseUrl: 'http://192.168.100.2:4200/',
+
+  exclude: [],
+
+  // 'jasmine' by default will use the latest jasmine framework
   framework: 'jasmine',
+
+  // allScriptsTimeout: 110000,
+
   jasmineNodeOpts: {
+    // showTiming: true,
     showColors: true,
-    defaultTimeoutInterval: 30000,
-    print: function() {}
+    isVerbose: false,
+    includeStackTrace: false,
+    // defaultTimeoutInterval: 400000
   },
-  onPrepare() {
-    require('ts-node').register({
-      project: 'e2e/tsconfig.e2e.json'
-    });
-    jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
-  }
+
+  directConnect: true,
+
+  multicapabilities: [{
+    browserName: 'chrome'
+  }],
+
+  onPrepare: function () {
+    browser.ignoreSynchronization = false;
+  },
+
 };
+
+if (process.env.TRAVIS) {
+  config.multicapabilities.push({
+    browserName: 'firefox'
+  });
+  // https://github.com/angular/protractor/issues/4253
+}
+
+exports.config = config;

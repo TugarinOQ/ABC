@@ -1,0 +1,49 @@
+.logo {
+  background: url("../../assets/images/logo.png") no-repeat center center;
+  position: absolute;
+  background-size: 100%;
+  top: 10px;
+  height: 45%;
+  left: 27%;
+  right: 27%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  height: 40%;
+  overflow-y: hidden;
+}
+
+.navigation > .row {
+  width: calc(220px * 1);
+  margin: 0 auto;
+}
+
+.navigation > .row > a.bigNavButton {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.25);
+  background: #fcfcfc;
+  float: left;
+  margin: 50px 10px;
+  transition: all .3s;
+}
+
+.navigation > .row > a.bigNavButton:hover, .navigation > .row > a.bigNavButton:active {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px 0 #00000040;
+}
+
+.navigation > .row > a.bigNavButton.puzzle {
+  background: #fcfcfc url('../../assets/images/icons/puzzle.png') no-repeat center center;
+  background-size: 50%;
+}

@@ -1,0 +1,158 @@
+@font-face {
+  font-family: font-display;
+  font-weight: 400;
+  src: url('../assets/fonts/Display-Regular.ttf');
+}
+@font-face {
+  font-family: font-display;
+  font-weight: 400;
+  font-style: italic;
+  src: url('../assets/fonts/Display-Regular-Italic.ttf');
+}
+@font-face {
+  font-family: font-display;
+  font-weight: 200;
+  src: url('../assets/fonts/Display-Light.ttf');
+}
+@font-face {
+  font-family: font-display;
+  font-weight: 700;
+  src: url('../assets/fonts/Display-Bold.ttf');
+}
+
+@font-face {
+  font-family: font-text;
+  font-weight: 400;
+  src: url('../assets/fonts/Text-Regular.ttf');
+}
+@font-face {
+  font-family: font-text;
+  font-weight: 400;
+  font-style: italic;
+  src: url('../assets/fonts/Text-Regular-Italic.ttf');
+}
+@font-face {
+  font-family: font-text;
+  font-weight: 200;
+  src: url('../assets/fonts/Text-Light.ttf');
+}
+@font-face {
+  font-family: font-text;
+  font-weight: 700;
+  src: url('../assets/fonts/Text-Bold.ttf');
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+body {
+  position: relative;
+  font-family: font-text, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  color: #1a1a1a;
+  background: #c0f1ff url('../assets/images/backgrounds/background.png') no-repeat center bottom;
+  background-size: 100%;
+  min-height: 100%;
+}
+
+@media screen and (min-width: 640px) and (max-width: 800px) {
+  body {
+    background-image: url('../assets/images/backgrounds/background2x.png');
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  body {
+    background-image: url('../assets/images/backgrounds/background3x.png');
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  body {
+    background-image: url('../assets/images/backgrounds/background4x.png');
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  body {
+    background-image: url('../assets/images/backgrounds/background5x.png');
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  body {
+    background-image: url('../assets/images/backgrounds/background6x.png');
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 3840px) {
+  body {
+    background-image: url('../assets/images/backgrounds/background7x.png');
+  }
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  height: 70px;
+}
+
+footer > .copyright {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer > .copyright > .developer {
+  float: left;
+  line-height: 74px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+footer > .copyright > .any {
+  float: right;
+  opacity: 0.6;
+}
+
+footer > .copyright > .any > * {
+  display: inline-block;
+}
+
+footer > .copyright .ggkttd {
+  background: url('../assets/images/icons/ggkttd.png') no-repeat center center;
+  width: 100px;
+  height: 70px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
