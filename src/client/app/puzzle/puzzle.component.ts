@@ -11,6 +11,14 @@ const puzzle = require('./module/puzzle.module.js');
 })
 export class PuzzleComponent implements OnInit {
 
+  images = [
+    'http://www.embassybel.ru/i/upload/temp/belarus3522.jpg',
+    'https://static.boredpanda.com/blog/wp-content/uploads/2016/01/i-create-whimsical-images-using-flowers__880.jpg'
+  ];
+
+  currentImage = '';
+  idxCurrentImage = 0;
+
   countPiecesInPuzzle = 4;
   isChoosePieces = true;
 
@@ -22,6 +30,10 @@ export class PuzzleComponent implements OnInit {
   ngOnInit() {
 
     console.log('Puzzle');
+
+    this.idxCurrentImage = this.getRandom();
+
+    this.currentImage = this.images[ this.idxCurrentImage ];
   }
 
   close(isChoosePieces: boolean) {
@@ -42,13 +54,29 @@ export class PuzzleComponent implements OnInit {
 
     this.countPiecesInPuzzle = count;
 
-    puzzle(window, this.countPiecesInPuzzle);
+    puzzle(window, this.countPiecesInPuzzle, () => this.chooseImage());
   }
 
   //
 
-  chooseImage(image: string) {
+  chooseImage() {
 
-    //
+    setTimeout(() => {
+
+      window.alert('Выдатна. Вы паспяхова сабралі складанку.');
+
+      this.idxCurrentImage = (this.idxCurrentImage === 0) ? 1 : 0;
+
+      console.log(this.idxCurrentImage);
+
+      this.currentImage = this.images[ this.idxCurrentImage ];
+
+      puzzle(window, this.countPiecesInPuzzle, () => this.chooseImage(), this.currentImage);
+    }, 1000);
+  }
+
+  getRandom() {
+
+    return Math.floor(Math.random() * this.images.length);
   }
 }

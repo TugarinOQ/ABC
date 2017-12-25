@@ -1,4 +1,4 @@
-module.exports = (window, pieces) => {
+module.exports = (window, pieces, cb, image) => {
 
   (function($){
     $.fn.snapPuzzle = function(options){
@@ -146,10 +146,24 @@ module.exports = (window, pieces) => {
       onComplete: function(){
         $('#source_image').fadeOut(150).fadeIn();
         $('#puzzle_solved').show();
+
+        reload_puzzle();
+
+        cb();
       }
     });
   }
+  function reload_puzzle() {
+
+    $('#pile').empty();
+  }
   $(function(){
+
+    if (image) {
+
+      $("#source_image").attr("src", image);
+    }
+
     $('#pile').height($('#source_image').height());
     start_puzzle(pieces || 2);
     $('.restart-puzzle').click(function(){
@@ -162,33 +176,3 @@ module.exports = (window, pieces) => {
     });
   });
 };
-
-// const puzzle = {
-//
-//   window: window,
-//   workarea: undefined,
-//
-//   sourceImage: undefined,
-//
-//   rows: 2,
-//   columns: 2,
-//
-//   init({ window, rows = 2, columns = 2 }) {
-//
-//     this.window = window;
-//     this.workarea = this.window.document.getElementsByClassName("workarea")[0];
-//
-//     this.sourceImage = this.window.document.getElementById("sourceImage");
-//
-//     console.log(this.workarea);
-//
-//     console.log(this.sourceImage);
-//
-//     let width = this.sourceImage.offsetWidth / rows;
-//
-//     this.rows = rows;
-//     this.columns = columns;
-//   }
-// };
-//
-// module.exports = puzzle;

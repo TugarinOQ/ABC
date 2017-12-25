@@ -58,7 +58,7 @@ export class ABCComponent implements OnInit {
 
     const word = e.target.dataset.value;
 
-    const link = `abc_${word}`;
+    const link = `${word}`;
 
     this.activeWord = word;
 

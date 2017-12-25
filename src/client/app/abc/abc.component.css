@@ -53,7 +53,95 @@ a.navButton.small {
   z-index: 1000000;
 }
 
-.abc_A {
-  background: url("../../assets/images/alphabet/abc_A.png") no-repeat 0 30%;
+.A {
+  background: url("../../assets/images/alphabet/A.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.B {
+  background: url("../../assets/images/alphabet/B.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.V {
+  background: url("../../assets/images/alphabet/V.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.G {
+  background: url("../../assets/images/alphabet/G.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.D {
+  background: url("../../assets/images/alphabet/D.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.Dzh {
+  background: url("../../assets/images/alphabet/Dzh.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.DZ {
+  background: url("../../assets/images/alphabet/DZ.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.E {
+  background: url("../../assets/images/alphabet/E.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.Yo {
+  background: url("../../assets/images/alphabet/Yo.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.Zh {
+  background: url("../../assets/images/alphabet/Zh.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.Z {
+  background: url("../../assets/images/alphabet/Z.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.I {
+  background: url("../../assets/images/alphabet/I.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.J {
+  background: url("../../assets/images/alphabet/J.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.K {
+  background: url("../../assets/images/alphabet/K.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.L {
+  background: url("../../assets/images/alphabet/L.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.M {
+  background: url("../../assets/images/alphabet/M.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.N {
+  background: url("../../assets/images/alphabet/N.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.O {
+  background: url("../../assets/images/alphabet/O.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.P {
+  background: url("../../assets/images/alphabet/P.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.R {
+  background: url("../../assets/images/alphabet/R.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.S {
+  background: url("../../assets/images/alphabet/S.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.T {
+  background: url("../../assets/images/alphabet/T.png") no-repeat 0 30%;
+  background-size: 80%;
+}
+.U {
+  background: url("../../assets/images/alphabet/U.png") no-repeat 0 30%;
   background-size: 80%;
 }
