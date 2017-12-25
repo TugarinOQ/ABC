@@ -5,13 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { PuzzleModule } from './puzzle/puzzle.module';
 import { HomeModule } from './home/home.module';
+import { ABCModule } from './abc/abc.module';
+import { PuzzleModule } from './puzzle/puzzle.module';
 import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule, PuzzleModule, HomeModule, SharedModule.forRoot()],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule, ABCModule, PuzzleModule, HomeModule, SharedModule.forRoot()],
   declarations: [AppComponent],
   providers: [{
     provide: APP_BASE_HREF,

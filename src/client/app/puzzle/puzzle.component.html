@@ -1,12 +1,39 @@
-<p>Angular Seed is a starter project that implements best practices in coding, building and testing Angular apps.</p>
+<a class="navButton small left opacity fullscreen"></a>
+<a (click)="close(isChoosePieces)" class="navButton small right opacity close"></a>
 
-<h2 i18n>Features</h2>
-<ul>
-  <li>Ready to go, statically typed build system using Gulp for working with TypeScript.</li>
-  <li>Production and development builds.</li>
-  <li>Sample unit tests with Jasmine and Karma including code coverage via Istanbul.</li>
-  <li>End-to-end tests with Protractor.</li>
-  <li>Development server with live reload.</li>
-  <li>TypeScript definition management using Types.</li>
-  <li>Basic Service Worker, which implements "Cache then network strategy".</li>
-</ul>
+<section class="choosePieces" *ngIf="isChoosePieces">
+
+  <section class="title">Выберыце колькасць пазлаў</section>
+
+  <section class="navigation clearfix">
+    <section class="row clearfix">
+
+      <a (click)="choosePuzzle(2)" class="navButton rectangle">4</a>
+      <a (click)="choosePuzzle(3)" class="navButton rectangle">9</a>
+      <a (click)="choosePuzzle(4)" class="navButton rectangle">16</a>
+      <a (click)="choosePuzzle(5)" class="navButton rectangle">25</a>
+
+    </section>
+  </section>
+
+</section>
+
+<section class="puzzle" [ngStyle]="{'width': screenWidth, 'height': screenHeight}" *ngIf="!isChoosePieces">
+
+  <div id="puzzle-containment" class="container">
+    <div class="row" style="max-width:1280px;margin:auto">
+      <div class="col-sm-6">
+        <div style="margin: 0 auto;width: 600px;">
+            <span class="snappuzzle-wrap">
+                <img id="source_image" class="pure-img" src="http://www.embassybel.ru/i/upload/temp/belarus3522.jpg">
+            </span>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div id="pile" style="margin: 10px; height: 347px;" class="asd">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -20,30 +20,21 @@
 }
 
 .navigation > .row {
-  width: calc(220px * 1);
+  width: calc(220px * 2);
   margin: 0 auto;
 }
 
-.navigation > .row > a.bigNavButton {
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 6px;
-  -webkit-box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.25);
-  background: #fcfcfc;
-  float: left;
-  margin: 50px 10px;
-  transition: all .3s;
+a.navButton.small {
+  width: 100px;
+  height: 100px;
+  margin: 25px 26px;
 }
 
-.navigation > .row > a.bigNavButton:hover, .navigation > .row > a.bigNavButton:active {
-  transform: scale(1.1);
-  box-shadow: 0 15px 40px 0 #00000040;
+a.navButton.abc {
+  background: white url("../../assets/images/icons/abc.png") no-repeat center center;
+  background-size: 50%;
 }
-
-.navigation > .row > a.bigNavButton.puzzle {
-  background: #fcfcfc url('../../assets/images/icons/puzzle.png') no-repeat center center;
+a.navButton.puzzle {
+  background: white url("../../assets/images/icons/puzzle.png") no-repeat center center;
   background-size: 50%;
 }

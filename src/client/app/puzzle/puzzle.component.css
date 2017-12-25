@@ -10,3 +10,56 @@ h2 {
   margin-bottom: 0;
   margin-top: 0.83em;
 }
+
+.choosePieces > .title {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 500;
+  top: 10%;
+  height: 45%;
+  left: 25%;
+  right: 25%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.choosePieces > .navigation {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  height: 35%;
+  overflow-y: hidden;
+}
+
+.choosePieces > .navigation > .row {
+  width: calc(220px * 4);
+  margin: 0 auto;
+}
+
+.choosePieces > .navigation > .row > .navButton {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 101px;
+}
+
+.puzzle {
+  left: 0;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.puzzle > #puzzle-containment {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /*width: 97%;*/
+  /*height: 80.5%;*/
+  width: 100%;
+  height: 100%;
+  padding: 150px 15px 0 15px;
+  background: rgba(0, 0, 0, 0.76);
+  overflow: hidden;
+}

@@ -33,6 +33,7 @@
     "sme.prod.aot": "gulp sme.prod.aot --color --env-config prod --build-type prod --preserve-source-maps",
     "sme.prod.rollup.aot": "gulp sme.prod.rollup.aot --color --env-config prod --build-type prod --preserve-source-maps",
     "start": "gulp serve.dev --color --host 192.168.100.2 --port 8080",
+    "start.host": "gulp serve.dev --color --host 0.0.0.0 --port 80",
     "start.deving": "gulp start.deving --color",
     "tasks.list": "gulp --tasks-simple --color",
     "test": "gulp test --color",
@@ -43,6 +44,7 @@
     "compodoc": "./node_modules/.bin/compodoc -p src/client/tsconfig.json",
     "serve.compodoc": "./node_modules/.bin/compodoc -s"
   },
+  "private": true,
   "author": "Dmitry Streltsov <dev-0x15@yandex.by>",
   "license": "MIT",
   "engines": {

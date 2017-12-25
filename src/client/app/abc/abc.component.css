@@ -1,0 +1,59 @@
+.grid {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  transform: translate(-45%, -35%);
+}
+.grid > section {
+  display: inline-block;
+}
+.grid > .left {
+  float: left;
+  width: 40%;
+}
+.grid > .right {
+  float: right;
+  width: 60%;
+}
+
+a.navButton.small {
+  width: 100px;
+  height: 100px;
+  margin: 25px 26px;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 6px;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  margin: 20px 0 0 20px;
+  text-align: center;
+  font-size: 35px;
+  transition: all .3s;
+  text-decoration: none;
+  color: #465c69;
+  cursor: pointer;
+  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(252, 252, 252, 0.9);
+}
+.button.active {
+  transform: scale(1.5);
+  font-weight: bold;
+  background: rgba(252, 252, 252, 1);
+  z-index: 1000000;
+}
+
+.abc_A {
+  background: url("../../assets/images/alphabet/abc_A.png") no-repeat 0 30%;
+  background-size: 80%;
+}
